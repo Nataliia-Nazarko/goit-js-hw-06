@@ -22,3 +22,4 @@ const markup = images
   .join("");
 
 gallery.insertAdjacentHTML("afterbegin", markup);
+
