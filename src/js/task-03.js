@@ -1,5 +1,4 @@
 const gallery = document.querySelector(".gallery")
-console.log(gallery);
 
 const images = [
   {
@@ -16,10 +15,30 @@ const images = [
   },
 ];
 
-
 const markup = images
   .map((image) => `<li><img class="image" src='${image.url}' alt='${image.alt}'></li>`)
   .join("");
 
 gallery.insertAdjacentHTML("afterbegin", markup);
+
+const galleryStyle = document.querySelector(".gallery");
+  galleryStyle.style.width = "auto";
+  galleryStyle.style.listStyle = "none";
+  galleryStyle.style.display = "flex";
+  galleryStyle.style.justifyContent = "space-between";
+  galleryStyle.style.padding = "0";
+
+  
+const imageStyle = document.querySelectorAll(".image");
+imageStyle.forEach(function callback(image) {
+  image.style.width = "205px";
+  image.style.height = "120px";
+  image.style.border = "0";
+  image.style.display = "block";
+});
+
+
+
+
+
 
