@@ -1,4 +1,3 @@
-
 const numberOfCategoriesEl = document.querySelectorAll("li.item");
 console.log('Number of category:', numberOfCategoriesEl.length);
 

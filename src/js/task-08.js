@@ -1,6 +1,6 @@
-const form = document.querySelector("form");
+const formEl = document.querySelector("form");
 
-form.addEventListener("submit", onButtonSubmit);
+formEl.addEventListener("submit", onButtonSubmit);
 
 function onButtonSubmit(event) {
   event.preventDefault();
